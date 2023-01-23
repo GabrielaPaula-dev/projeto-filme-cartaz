@@ -29,7 +29,7 @@
     body {
         background-image: url(../images/fundo.jpg);
         background-size: cover;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     body::before {
@@ -46,7 +46,7 @@
     }
 
     .modal iframe {
-        width: 300px;
+        width: 360px;
         height: 200px;
         margin-top: 4rem;
     }
@@ -105,15 +105,34 @@
         max-width: 100%;
         margin-top: 2rem;
     }
-    .modal iframe {
-        width: 200px;
-        height: 100px;
-        margin-top: 10rem;
+
+    .modal {
+        height: 120vh;
+        top: 20rem;
     }
-    .modal .slide button,
-    .modal .slide button img {
-        width: 20px;
-        height: 20px;
+
+    .modal iframe {
+        width: 90%;
+        height: 15rem;
+    }
+
+    .modal .slide button {
+        display: none;
+    }
+
+    .modal .slide .list-trailers .trailer {
+        position: relative;
+        display: block;
+        width: 90%;
+        height: 15rem;
+        margin-top: 1rem;
+
+    }
+
+    .modal .slide .list-trailers {
+        flex-direction: column;
+        height: 66rem;
+        margin-bottom: 1.5rem;
     }
 
 }
