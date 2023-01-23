@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <title>Sete Pecados Capitais</title>
+</head>
+
+<body>
+    <div class="fundo-video">
+        <video src="./src/video/fundo-video.mp4" autoplay loop muted></video>
+    </div>
+    <header class="header">
+        <a href="#">
+            <img src="./src/images/logo.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="informacoes">
+            <img src="./src/images/titulo.png" alt="Os Sete Pecados Capitais" class="titulo">
+            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae fugit dolor
+                voluptates aliquam fugiat doloribus veniam, libero necessitatibus totam odio culpa quisquam accusamus.
+                Quia natus iste debitis nesciunt nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+                modi veniam rem quo maxime reiciendis distinctio ipsam cum, molestias mollitia tenetur. Maiores, illo.
+                Sapiente illum nostrum sed. Perferendis, odit eveniet?</p>
+            <button class="btn-trailers">veja os traileirs</button>
+        </div>
+        <img src="./src/images/sete-pecados.png" class="personagens" alt="Personagens Sete Pecados Capitais">
+        <div class="modal ">
+            <span class="fechar-modal">x</span>
+            <div class="slide">
+                <button>
+                    <img src="./src/images/seta-esquerda.png" alt="Seta de Voltar" class="seta voltar">
+                </button>
+                <ul class="list-trailers">
+                    <li class="trailer selecionado">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wxcvbL6o55M"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li class="trailer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/70HfDVk6tNs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li class="trailer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kCwrqbjtS0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li class="trailer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xykyxRokHW4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> 
+                </li>
+                </ul>
+                <button>
+                    <img src="./src/images/seta-direita.png" alt="Seta de Avançar" class="seta avancar">
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

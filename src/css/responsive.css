@@ -1,0 +1,119 @@
+@media (min-width:1600px) {
+    .fundo-video video {
+        transform: scale(1.2);
+    }
+
+    .header,
+    .container {
+        max-width: 2000px;
+    }
+
+    .container .informacoes .descricao,
+    .container .informacoes .btn-trailers,
+    .header nav .menu li a {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:1300px) {
+    .fundo-video video {
+        transform: scale(1.8);
+    }
+}
+
+@media (max-width:1020px) {
+    .fundo-video {
+        display: none;
+    }
+
+    body {
+        background-image: url(../images/fundo.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    body::before {
+        content: "";
+        background: linear-gradient(0deg, rgba(17, 18, 10, 1) 2%, rgba(17, 18, 10, 0.5) 47%, rgba(17, 18, 10, 1) 99%);
+        height: 130vh;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .modal {
+        padding: 0 2rem;
+    }
+
+    .modal iframe {
+        width: 300px;
+        height: 200px;
+        margin-top: 4rem;
+    }
+
+    .modal .slide button,
+    .modal .slide button img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width:768px) {
+    .container .informacoes .titulo {
+        width: 28rem;
+        height: auto;
+    }
+
+    .container .informacoes .descricao,
+    .container .informacoes .btn-trailers {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width:427px) {
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container .informacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .container .informacoes .titulo {
+        width: 22rem;
+        height: auto;
+    }
+
+    .container .informacoes .descricao {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .container .informacoes .btn-trailers {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+
+    .container .personagens {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    .modal iframe {
+        width: 200px;
+        height: 100px;
+        margin-top: 10rem;
+    }
+    .modal .slide button,
+    .modal .slide button img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
