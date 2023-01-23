@@ -64,7 +64,9 @@
         height: auto;
     }
 
-    .container .informacoes .descricao,
+    .container .informacoes .descricao{
+        font-size: 2rem;
+    }
     .container .informacoes .btn-trailers {
         font-size: 1.6rem;
     }
@@ -90,7 +92,7 @@
     }
 
     .container .informacoes .descricao {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 2rem;
         text-align: center;
         margin-top: 2rem;
