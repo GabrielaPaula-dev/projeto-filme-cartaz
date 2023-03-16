@@ -8,25 +8,34 @@ let videoAtual = 0
 
 btnTrailers.addEventListener('click', () => {
     modal.classList.add('selecionado');
+    trailers[videoAtual].firstElementChild.src = 'https://www.youtube.com/embed/wxcvbL6o55M'
     botaoFechar.addEventListener('click', () => {
-        const modelAberto = document.querySelector('.selecionado');
-        modelAberto.classList.remove('selecionado');
-    })        
+        modal.classList.remove('selecionado');
+    })
 })
 btnAvancar.addEventListener('click', () => {
+    trailers[videoAtual].firstElementChild.src = '';
     trailers[videoAtual].classList.remove('selecionado');
     videoAtual++;
-    if (videoAtual>=trailers.length) {
-        videoAtual=0
+    if (videoAtual >= trailers.length) {
+        videoAtual = 0
     }
-    trailers[videoAtual].classList.add('selecionado'); 
+    trailers[videoAtual].classList.add('selecionado');
+    if (trailers[videoAtual].classList.contains('selecionado')) {
+        trailers[videoAtual].firstElementChild.src = `https://www.youtube.com/embed/${trailers[videoAtual].id}`;
+    }
 })
-btnVoltar.addEventListener('click',()=>{
-    if (videoAtual===0) {
-        videoAtual=trailers.length-1
-    }
+btnVoltar.addEventListener('click', () => {
     trailers[videoAtual].classList.remove('selecionado');
+    trailers[videoAtual].firstElementChild.src = '';
+
+    if (videoAtual === 0) {
+        videoAtual = trailers.length;
+    }
     videoAtual--;
     trailers[videoAtual].classList.add('selecionado');
-    
+    if (trailers[videoAtual].classList.contains('selecionado')) {
+        trailers[videoAtual].firstElementChild.src = `https://www.youtube.com/embed/${trailers[videoAtual].id}`;
+    }
 })
+

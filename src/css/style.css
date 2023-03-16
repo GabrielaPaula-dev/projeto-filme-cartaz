@@ -158,6 +158,9 @@
 .modal .slide button:hover {
     transform: scale(1.2);
 }
+.modal .slide button .avancar{
+    transform: rotate(180deg);
+}
 .modal.selecionado{
     display: block;
 }
